@@ -1,6 +1,7 @@
 <template>
 <div>
-<button @click="$store.commit('increment')">{{ $store.state.counter }}</button>
+  <!-- {{ $store.state.counter }} -->
+<!-- <button @click="$store.commit('increment')">{{ $store.state.counter }}</button> -->
   <section class="container">
     <div class="quill-editor" 
          :content="content"
