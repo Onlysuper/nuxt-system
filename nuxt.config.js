@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nuxt-system',
+    title: 'laomeng',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,6 +17,18 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  plugins: [{
+    src: '~plugins/ElementUI',
+    ssr: true
+  },
+  { src: '~plugins/nuxt-quill-plugin.js', ssr: false }
+],
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    'quill/dist/quill.snow.css',
+    'quill/dist/quill.bubble.css',
+    'quill/dist/quill.core.css'
+  ],
   /*
   ** Build configuration
   */
@@ -33,6 +45,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor:['element-ui','vue-quill-editor']
   }
 }
