@@ -1,6 +1,6 @@
 <template>
 
-  <el-menu default-active="1-4-1" class="el-menu-vertical-demo" :collapse="isCollapse" :fit="true" :unique-opened="true">
+  <el-menu default-active="1-4-1" class="el-menu-vertical-demo" :collapse="isCollapse" :fit="true" :unique-opened="true" :router="true">
     <el-submenu v-for="(item) of menuData.data" :index="item.menuCode" :key="item.menuCode">
       <template slot="title">
         <i class="el-icon-location"></i>
@@ -8,6 +8,7 @@
       </template>
      
       <el-menu-item-group v-for="(child) of item.child" :index="child.menuCode" :key="child.menuCode">
+        <!-- <el-menu-item :index="child.url">{{child.menuName}}</el-menu-item> -->
         <el-menu-item :index="child.menuCode">{{child.menuName}}</el-menu-item>
       </el-menu-item-group>
     </el-submenu>

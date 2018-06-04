@@ -12,7 +12,8 @@
       </el-radio-group>
     </el-header>
     <el-main>
-      <div style="display:flex">
+      <nuxt-child/>
+      <!-- <div style="display:flex">
        <el-table
         :data="tableData"
         border
@@ -61,7 +62,7 @@
           </template>
         </el-table-column>
       </el-table>
-      </div>
+      </div> -->
     </el-main>
   </el-container>
 </el-container>

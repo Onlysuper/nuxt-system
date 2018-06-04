@@ -5,18 +5,18 @@
                 {
                     "child":[],
                     "isparent":false,
-                    "menuCode":"info",
+                    "menuCode":"aboutinfo",
                     "menuName":"基本资料",
                     "parentCode":"root",
-                    "url":""
+                    "url":"aboutinfo"
                 },
                 {
                     "child":[],
                     "isparent":false,
-                    "menuCode":"aboutArical",
+                    "menuCode":"aboutarticle",
                     "menuName":"几种可能",
                     "parentCode":"root",
-                    "url":""
+                    "url":"aboutarticle"
                 }
             ],
             "isParent":true,
@@ -33,7 +33,7 @@
                     "menuCode":"notes",
                     "menuName":"笔记",
                     "parentCode":"technology",
-                    "url":""
+                    "url":"/about/article"
                 },
                 {
                     "child":[],
@@ -41,7 +41,7 @@
                     "menuCode":"shares",
                     "menuName":"分享",
                     "parentCode":"technology",
-                    "url":""
+                    "url":"/about/article"
                 }
             ],
             "isParent":true,
@@ -58,7 +58,7 @@
                     "menuCode":"timeFlow",
                     "menuName":"时间流",
                     "parentCode":"life",
-                    "url":""
+                    "url":"/about/article"
                 },
                 {
                     "child":[],
@@ -66,14 +66,14 @@
                     "menuCode":"lifeArcical",
                     "menuName":"老萌观",
                     "parentCode":"life",
-                    "url":""
+                    "url":"/about/article"
                 }
             ],
             "isParent":true,
             "menuCode":"life",
             "menuName":"生活家",
             "parentCode":"root",
-            "url":""
+            "url":"/about/article"
         }
     ]
 }
